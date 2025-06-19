@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <title>Gerador de QRCODE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="qr-code-generator">
+
+        <div class="logo">
+            <a href ="index.html"><img src="logo.jpeg"></a>
+        </div>
+        <div>
+            <input type="text" class="qr-url" placeholder="Cole o link ou texto aqui">
+            <input type="number" class="qr-size" value="250" min="20" max="500">
+
+            <button class="generate-qr-code">Gerar QRCODE</button>
+        </div>
+</div>
+
+<div id="qrcode"></div>
+
+<script src="index.js"></script>
+</body>
+</html>
